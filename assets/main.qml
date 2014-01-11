@@ -23,36 +23,70 @@ TabbedPane {
         title: qsTr("Dashboard") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "images/db.png"
         Page {
-            property NavigationPane currentNavigationPane: tab1Handle.navHandle
+            
             Menu.definition: MenuDefinition {
                 id: menu
                 actions: [
                     ActionItem {
                         title: "Settings"
-                        onTriggered: {
-                            console.log("Info: ActionItem : onTriggered");
-                            // For InfoPage, we will use Sheet
-                            infoSheet.open();
-                        }
                     }
                 ]
             }
+            titleBar: TitleBar {
+                title: "Dashboard"
+                kind: TitleBarKind.FreeForm
+                kindProperties: FreeFormTitleBarKindProperties {
+                    Container {
+                        layout: StackLayout {
+                            orientation: LayoutOrientation.LeftToRight
+                    
+                        }
+                        leftPadding: 10
+                        rightPadding: 10
+        
+                        Label {
+                        
+                            text: "Dashboard"
+                            verticalAlignment: VerticalAlignment.Center
+                            horizontalAlignment: HorizontalAlignment.Center
+                            leftMargin: 100.0
+                            rightMargin: 400.0
+                            textStyle.fontSize: FontSize.Large
+
+                        }
+                        verticalAlignment: VerticalAlignment.Center
+                       
+                        Container {
+                            
+                            layoutProperties: StackLayoutProperties {
+
+                            }
+
+                            horizontalAlignment: HorizontalAlignment.Center
+                            verticalAlignment: VerticalAlignment.Center
+                            Button {
+                            
+                            maxWidth: 180
+                            verticalAlignment: VerticalAlignment.Top
+                            text: "Refresh"
+                            horizontalAlignment: HorizontalAlignment.Right
+                        }}
+                
+                    }
+                }
+                appearance: TitleBarAppearance.Plain
+
+            }
             Container {
-
-                Label {
-                    text: "Dashboard"
-                    textStyle.color: Color.create("#ffffff")
-                    textStyle.fontSize: FontSize.Large
-                    verticalAlignment: VerticalAlignment.Center
-                    horizontalAlignment: HorizontalAlignment.Center
-
-                    bottomMargin: 90.0
-                    textStyle.fontStyle: FontStyle.Italic
+                background: Color.create("#333333")
+                verticalAlignment: VerticalAlignment.Center
+                horizontalAlignment: HorizontalAlignment.Center
+                Container {
+                    topPadding: 70.0
 
                 }
-
-                background: Color.create("#333333")
-                Container {
+                Container {//circles1
+                    
                     layout: StackLayout {
                         orientation: LayoutOrientation.LeftToRight
 
@@ -66,7 +100,7 @@ TabbedPane {
                     }
 
                 }
-                Container {
+                Container {//circles2
                     layout: StackLayout {
                         orientation: LayoutOrientation.LeftToRight
 
@@ -84,13 +118,19 @@ TabbedPane {
         }
     }
     Tab { //Second tab
+        
         title: qsTr("Friends") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "images/friends.png"
         Page {
+            titleBar: TitleBar {
+                id: friends
+                title: "Friends"
+                appearance: TitleBarAppearance.Plain
+            
+            }
             Container {
-                Label {
-                    text: qsTr("Second tab") + Retranslate.onLocaleOrLanguageChanged
-                }
+                background: Color.create("#333333")
+            
             }
         }
     } //End of second tab

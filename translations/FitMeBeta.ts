@@ -9,13 +9,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../assets/main.qml" line="87"/>
+        <location filename="../assets/main.qml" line="122"/>
         <source>Friends</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/main.qml" line="92"/>
-        <source>Second tab</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
