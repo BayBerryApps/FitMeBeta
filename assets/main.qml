@@ -122,7 +122,7 @@ TabbedPane {
                     leftPadding: 15.0
                     verticalAlignment: VerticalAlignment.Bottom
                     Label {
-                    text: "Last synched:1000 mins ago"
+                    text: "Last synched:1000 mins ago..."
                     textStyle.textAlign: TextAlign.Default
                     textStyle.fontWeight: FontWeight.Normal
                     textStyle.fontStyle: FontStyle.Italic
@@ -148,6 +148,10 @@ TabbedPane {
             }
             Container {
                 background: Color.create("#333333")
+                ImageView {
+                    imageSource: "images/mockup.jpg"
+
+                }
             
             }
         }
