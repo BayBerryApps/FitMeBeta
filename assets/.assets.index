@@ -1,5 +1,5 @@
 1
-7
+9
 Circlecomponent.qml
 images/1280x768FitMe_splash.jpg
 images/circle.png
@@ -7,3 +7,5 @@ images/db.png
 images/friends.png
 InfoPage.qml
 main.qml
+PullToRefreshListView.qml
+RefreshHeader.qml

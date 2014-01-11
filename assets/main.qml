@@ -32,16 +32,16 @@ TabbedPane {
                     }
                 ]
             }
-            titleBar: TitleBar {
-                title: "Dashboard"
-                kind: TitleBarKind.FreeForm
-                kindProperties: FreeFormTitleBarKindProperties {
-                    Container {
-                        layout: StackLayout {
-                            orientation: LayoutOrientation.LeftToRight
+            //titleBar: TitleBar {
+               // title: "Dashboard"
+                //kind: TitleBarKind.FreeForm
+               // kindProperties: FreeFormTitleBarKindProperties {
+                    //Container {
+                        //layout: StackLayout {
+                            //orientation: LayoutOrientation.LeftToRight
                     
-                        }
-                        leftPadding: 10
+                        //}
+                        /*leftPadding: 10
                         rightPadding: 10
         
                         Label {
@@ -76,7 +76,7 @@ TabbedPane {
                 }
                 appearance: TitleBarAppearance.Plain
 
-            }
+            }*///title bar
             Container {
                 background: Color.create("#333333")
                 verticalAlignment: VerticalAlignment.Center
@@ -118,10 +118,11 @@ TabbedPane {
                     layoutProperties: StackLayoutProperties {
 
                     }
-
+                    topPadding: 100
                     leftPadding: 15.0
+                    verticalAlignment: VerticalAlignment.Bottom
                     Label {
-                    text: "Last synched:"
+                    text: "Last synched:1000 mins ago"
                     textStyle.textAlign: TextAlign.Default
                     textStyle.fontWeight: FontWeight.Normal
                     textStyle.fontStyle: FontStyle.Italic
@@ -155,6 +156,6 @@ TabbedPane {
 //TODO: Implement Oauth login to fitbit
 //TODO: Add refresh icon to button
 //TODO: Fix second tab (mockup to come)
-//TODO: Add last synched status label
 //TODO: Create list view for friends
+//TODO: Pull down to refresh
 //TODO: Make $$$$
