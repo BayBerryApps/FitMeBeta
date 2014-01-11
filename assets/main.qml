@@ -135,3 +135,9 @@ TabbedPane {
         }
     } //End of second tab
 }
+//TODO: Implement Oauth login to fitbit
+//TODO: Add refresh icon to button
+//TODO: Fix second tab (mockup to come)
+//TODO: Add last synched status label
+//TODO: Create list view for friends
+//TODO: Make $$$$
