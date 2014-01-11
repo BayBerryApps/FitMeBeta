@@ -114,6 +114,23 @@ TabbedPane {
                     }
 
                 }
+                Container {
+                    layoutProperties: StackLayoutProperties {
+
+                    }
+
+                    leftPadding: 15.0
+                    Label {
+                    text: "Last synched:"
+                    textStyle.textAlign: TextAlign.Default
+                    textStyle.fontWeight: FontWeight.Normal
+                    textStyle.fontStyle: FontStyle.Italic
+                    textStyle.color: Color.create("#ffffff")
+                    layoutProperties: StackLayoutProperties {
+
+                    }
+}
+                }
             }
         }
     }
